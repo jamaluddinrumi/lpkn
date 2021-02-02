@@ -217,9 +217,9 @@ export default {
             return [
                 {
                     id: 0,
-                    title: this.$vuetify.lang.t("$vuetify.title.dashboard"),
+                    title: this.$vuetify.lang.t("$vuetify.title.rankings"),
                     href: "/dashboard",
-                    icon: "fas fa-home",
+                    icon: "fas fa-trophy",
                 },
                 {
                     id: 1,

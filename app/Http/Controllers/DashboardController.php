@@ -9,7 +9,7 @@ class DashboardController extends Controller
     public function index()
     {
         $data = [
-            "title" => "dashboard",
+            "title" => "rankings",
         ];
         return Inertia::render("Dashboard", $data);
     }

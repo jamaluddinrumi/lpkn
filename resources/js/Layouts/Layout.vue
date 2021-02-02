@@ -108,9 +108,9 @@
                     <v-icon v-else small class="-ml-2">fas fa-sun</v-icon>
                 </template>
             </v-switch>
-            <v-btn icon>
+            <!-- <v-btn icon>
                 <v-icon small>fas fa-bell</v-icon>
-            </v-btn>
+            </v-btn> -->
             <!-- <inertia-link href="/profile">
                 <v-btn icon>
                     <v-icon small>fas fa-user</v-icon>
@@ -223,15 +223,9 @@ export default {
                 },
                 {
                     id: 1,
-                    title: this.$vuetify.lang.t("$vuetify.title.nutrition"),
-                    href: "/nutrition",
-                    icon: "fas fa-utensils",
-                },
-                {
-                    id: 2,
-                    title: this.$vuetify.lang.t("$vuetify.title.customer"),
-                    href: "/customer",
-                    icon: "fas fa-user",
+                    title: this.$vuetify.lang.t("$vuetify.title.matches"),
+                    href: "/pertandingan",
+                    icon: "fas fa-futbol",
                 },
             ];
         },

@@ -328,10 +328,8 @@ export default {
 
         close() {
             this.dialog = false;
-            this.$nextTick(() => {
-                this.editedItem = Object.assign({}, this.defaultItem);
-                this.editedIndex = -1;
-            });
+            this.editedItem = Object.assign({}, this.defaultItem);
+            this.editedIndex = -1;
         },
 
         save() {

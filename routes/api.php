@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\API\CustomerController;
-use App\Http\Controllers\API\NutritionController;
+use App\Http\Controllers\API\KlasemenController;
+use App\Http\Controllers\API\PertandinganController;
+use App\Http\Controllers\API\TeamController;
 use App\Http\Controllers\UserController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -21,12 +22,14 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-// Route::group([], function () {
-Route::middleware('auth:sanctum', 'verified')->group(function () {
+Route::group([], function () {
+// Route::middleware('auth:sanctum', 'verified')->group(function () {
 
     Route::apiResource('/user', UserController::class);
 
-    Route::apiResource('/customer', CustomerController::class);
+    Route::apiResource('/team', TeamController::class);
 
-    Route::apiResource('/nutrition', NutritionController::class);
+    Route::apiResource('/pertandingan', PertandinganController::class);
+
+    Route::apiResource('/klasemen', KlasemenController::class);
 });

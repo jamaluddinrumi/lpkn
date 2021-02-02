@@ -1,15 +1,18 @@
 <template>
-    <layout>
+    <layout
+        ><div class="text-h4 mt-6 mb-4">
+            {{ $vuetify.lang.t("$vuetify.title.matches") }}
+        </div>
         <v-row>
             <v-col>
-                <nutritions-table :items-per-page="25"></nutritions-table>
+                <pertandingan :iemsPerPage="8"></pertandingan>
             </v-col>
         </v-row>
     </layout>
 </template>
 <script>
 import Layout from "@/Layouts/Layout";
-import NutritionsTable from "@/Components/Table/Nutritions"
+import Pertandingan from "@/Components/Table/Pertandingan";
 
 export default {
     title() {
@@ -27,7 +30,7 @@ export default {
 
     components: {
         Layout,
-        NutritionsTable,
+        Pertandingan,
     },
 
     props: {
@@ -43,8 +46,8 @@ export default {
         jetstream: {
             type: Object,
         },
-        user: {
-            type: Object,
+        users: {
+            type: Array,
         },
         title: {
             type: String,

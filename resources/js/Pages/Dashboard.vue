@@ -5,7 +5,7 @@
         </div>
         <v-row>
             <v-col>
-                <klasemen :iemsPerPage="8"></klasemen>
+                <klasemen :iemsPerPage="10"></klasemen>
             </v-col>
         </v-row>
     </layout>

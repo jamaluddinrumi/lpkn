@@ -17,7 +17,8 @@ use App\Http\Controllers\PertandinganController;
 |
 */
 
-Route::middleware('auth:sanctum', 'verified')->group(function () {
+Route::group([], function () {
+// Route::middleware('auth:sanctum', 'verified')->group(function () {
 
     Route::get('/', [DashboardController::class, 'index'])->name('welcome');
 

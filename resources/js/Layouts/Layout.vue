@@ -54,6 +54,12 @@
                     justify="center"
                     class="py-6 font-bold text-sm opacity-50 hover:opacity-100 transition-opacity"
                 >
+                    <logo></logo>
+                </v-row>
+                <v-row
+                    justify="center"
+                    class="py-6 font-bold text-sm opacity-50 hover:opacity-100 transition-opacity"
+                >
                     <v-icon small class="mr-1">fas fa-copyright</v-icon>
                     {{ new Date().getFullYear() }}
                     {{ $vuetify.lang.t("$vuetify.company") }}
@@ -192,10 +198,12 @@
 </template>
 <script>
 import CountryFlag from "vue-country-flag";
+import Logo from "@/Components/Image/Logo";
 
 export default {
     components: {
         CountryFlag,
+        Logo,
     },
     props: {},
     data() {
